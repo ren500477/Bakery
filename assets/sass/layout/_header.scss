@@ -1,0 +1,61 @@
+body {
+	overflow-x: hidden;
+}
+
+a {
+	text-decoration: none;
+}
+
+#nav {
+	position: sticky;
+	top: 1.6rem;
+	margin: 0 auto;
+	min-height: 4.8rem;
+	max-width: 144rem;
+	width: 100%;
+	.container {
+		.row {
+			.column {
+				align-items: center;
+				justify-content: space-between;
+				.menuAndlogo {
+					justify-content: space-between;
+					.nav__menu {
+						align-items: center;
+						justify-content: space-between;
+						width: 24.7%;
+						min-width: 20rem;
+						margin-right: 39%;
+						.nav__menu-items {
+							a {
+								color: rgb(255, 255, 255);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 767px) {
+	.menu-hamburger {
+		position: absolute;
+		left: 100000px;
+		padding: 0 9.375%;
+	}
+	#nav .container .row .column {
+		justify-content: space-between;
+	}
+	.font-Logo {
+		margin-right: 23.6%;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.nav__menu,
+	.btn-Contacts {
+		position: absolute;
+		left: 100000px;
+	}
+}
