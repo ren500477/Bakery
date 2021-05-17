@@ -52,6 +52,24 @@ a {
 	.font-Logo {
 		margin-right: 23.6%;
 	}
+
+	#nav {
+		.container {
+			.row {
+				.column {
+					.menuAndlogo {
+						.nav__menu {
+							align-items: center;
+							justify-content: space-between;
+							width: 24.7%;
+							min-width: 20rem;
+							margin-right: 39%;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 767px) {
@@ -59,5 +77,37 @@ a {
 	.btn-Contacts {
 		position: absolute;
 		left: 100000px;
+	}
+}
+
+@media screen and (min-width: 1199px) {
+	.menu-hamburger {
+		position: absolute;
+		left: 100000px;
+		padding: 0 9.375%;
+	}
+	#nav .container .row .column {
+		justify-content: space-between;
+	}
+	.font-Logo {
+		margin-right: 23.6%;
+	}
+
+	#nav {
+		.container {
+			.row {
+				.column {
+					.menuAndlogo {
+						.nav__menu {
+							align-items: center;
+							justify-content: space-between;
+							width: 24.7%;
+							min-width: 28.9rem;
+							margin-right: 39%;
+						}
+					}
+				}
+			}
+		}
 	}
 }
