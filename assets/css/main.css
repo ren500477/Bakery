@@ -182,10 +182,17 @@ body {
 }
 
 .btn {
-  padding: 1.2rem 4.2rem 1.2rem 4.2rem;
+  padding: 1.1rem 4.2rem 1.1rem 4.2rem;
   color: white;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 0.2rem;
+}
+
+.btn-circle {
+  width: 6.4rem;
+  height: 6.4rem;
+  border: 0.2rem solid #f5ae5c;
+  border-radius: 50%;
 }
 
 .container {
@@ -531,6 +538,8 @@ a {
   min-height: 4.8rem;
   max-width: 144rem;
   width: 100%;
+  background-color: rgba(23, 27, 27, 0.8);
+  z-index: 99;
 }
 #nav .container .row .column {
   align-items: center;
@@ -573,8 +582,163 @@ a {
   }
 }
 #hero {
-  margin-top: -6.4rem;
+  margin-top: -4.8rem;
   background-color: #171b1b;
-  height: 100vh;
   max-height: 88rem;
+  color: white;
+  overflow: hidden;
+}
+#hero .container {
+  height: 83rem;
+  position: relative;
+}
+#hero .container .background-img1,
+#hero .container .background-img2,
+#hero .container .background-img3 {
+  position: absolute;
+  top: -1000rem;
+}
+#hero .container .row {
+  margin-top: 8.9rem;
+  justify-content: center;
+  flex-direction: column-reverse;
+  margin-bottom: 2rem;
+}
+#hero .container .row .hero-text {
+  margin-top: -7px;
+}
+#hero .container .row .hero-text .subheadingSmall {
+  margin-bottom: 0.2rem;
+}
+#hero .container .row .hero-text .heading {
+  font-family: "Ultra", serif;
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 64px;
+  width: 34.7rem;
+  margin-bottom: 1.4rem;
+}
+#hero .container .row .hero-text .description {
+  height: 10.3rem;
+}
+#hero .container .row .column .img-holder {
+  width: 26.32rem;
+  height: 28.72rem;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+#hero .container .row .column .img-holder img {
+  width: 100%;
+}
+#hero .btn-circle {
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+#hero .btn-circle img {
+  transform: rotate(90deg);
+  width: 2.8rem;
+  height: 2.7rem;
+}
+
+@media screen and (min-width: 767px) {
+  #nav {
+    background-color: rgba(23, 27, 27, 0.8);
+  }
+
+  #hero {
+    height: 100%;
+    max-height: 55rem;
+  }
+  #hero .container .background-img1,
+#hero .container .background-img2,
+#hero .container .background-img3 {
+    position: absolute;
+    top: 10000rem;
+  }
+  #hero .container .row {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 8rem;
+    height: 37rem;
+  }
+  #hero .container .row .hero-text .subheadingSmall {
+    margin-top: 0;
+    margin-bottom: 0.2rem;
+  }
+  #hero .container .row .hero-text .heading {
+    font-family: "Ultra", serif;
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 64px;
+    width: 34.7rem;
+    margin-bottom: 1.4rem;
+  }
+  #hero .container .row .column .img-holder {
+    width: 102%;
+  }
+}
+@media screen and (min-width: 1199px) {
+  #nav {
+    background-color: rgba(23, 27, 27, 0.8);
+  }
+
+  #hero {
+    height: 100vh;
+    min-height: 90rem;
+  }
+  #hero .container {
+    height: 90rem;
+  }
+  #hero .container .background-img1 {
+    position: absolute;
+    top: -125.72px;
+    transform: rotate(-155deg);
+    margin-left: 50%;
+    z-index: 100;
+  }
+  #hero .container .background-img2 {
+    position: absolute;
+    top: 0px;
+    transform: rotate(-66deg);
+    margin-left: 91.6667%;
+    margin-top: 38.7rem;
+    z-index: 100;
+  }
+  #hero .container .background-img3 {
+    position: absolute;
+    top: 0px;
+    transform: rotate(-155deg);
+    margin-left: 42.53%;
+    margin-top: 80.24rem;
+    z-index: 100;
+  }
+  #hero .container .row {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 12.5rem;
+    height: 62.2rem;
+    margin-bottom: 7.6rem;
+  }
+  #hero .container .row .hero-text .subheadingSmall {
+    margin-top: 0;
+    margin-bottom: 2.1rem;
+  }
+  #hero .container .row .hero-text .heading {
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 80px;
+    width: 44.6rem;
+    height: 24rem;
+    margin-bottom: 2.7rem;
+  }
+  #hero .container .row .hero-text .description {
+    width: 47rem;
+  }
+  #hero .container .row .column .img-holder {
+    width: 102%;
+  }
 }/*# sourceMappingURL=main.css.map */

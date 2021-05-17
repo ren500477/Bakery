@@ -1,6 +1,13 @@
 .btn {
-	padding: 1.2rem 4.2rem 1.2rem 4.2rem;
+	padding: 1.1rem 4.2rem 1.1rem 4.2rem;
 	color: rgb(255, 255, 255);
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	border-radius: 0.2rem;
+}
+
+.btn-circle {
+	width: 6.4rem;
+	height: 6.4rem;
+	border: 0.2rem solid rgba(245, 174, 92, 1);
+	border-radius: 50%;
 }
